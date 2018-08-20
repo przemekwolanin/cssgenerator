@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Generator</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <main class="wrapper">
+        <div id="preview__button" class="preview__button">
+            <button>Text</button>
+        </div>
+        <div id="settings__buton" class="settings__buton">
+            <p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+            <div class="settings__buton--value">
+                Change value: <input type="text" id="button--change-value" class="button--change-value">
+            </div>
+            <div class="settings__buton--fontsize">
+                Font size: <input type="text" id="button--change-fontsize" class="button--change-fontsize"> px
+            </div>
+            <p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+            <div id="settings__buton--bg" class="settings__buton--bg">
+                <div>Background color: <input type="color" id="settings__buton--bg-color" class="settings__buton--bg-color"></div>
+                <div>Text color: <input type="color" id="settings__buton--txt-color" class="settings__buton--txt-color"></div>
+                <div>Border color: <input type="color" id="settings__buton--brd-color" class="settings__buton--brd-color"></div>
+            </div>
+            <p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+            <div class="settings__buton--border-radius">
+                <p>Border radius:</p>
+                <div>All corners:</div>
+                <input id="border-radius-allc" class="border-radius-allc" type="range" min="0" max="100" value="0" step="any">
+                <input type="text" id="border-radius-allc-num" class="border-radius-allc-num" value="0"> px
+                <p>-------------------------------------------------------</p>
+                <div>Top-left:</div>
+                <input id="border-radius-topleft" class="border-radius-topleft" type="range" min="0" max="100" value="0" step="any">
+                <input type="text" id="border-radius-topleft-num" class="border-radius-topleft-num" value="0"> px
+                <br>
+                <div>Top-right:</div>
+                <input id="border-radius-topright" class="border-radius-topright" type="range" min="0" max="100" value="0" step="any">
+                <input type="text" id="border-radius-topright-num" class="border-radius-topright-num" value="0"> px
+                <br>
+                <div>Bottom-left:</div>
+                <input id="border-radius-bottomleft" class="border-radius-bottomleft" type="range" min="0" max="100" value="0" step="any">
+                <input type="text" id="border-radius-bottomleft-num" class="border-radius-bottomleft-num" value="0"> px
+                <br>
+                <div>Bottom-right:</div>
+                <input id="border-radius-bottomright" class="border-radius-bottomright" type="range" min="0" max="100" value="0" step="any">
+                <input type="text" id="border-radius-bottomright-num" class="border-radius-bottomright-num" value="0"> px
+            </div>
+            <p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+            <div id="settings__buton--border">
+                <div class="settings__buton--border-width">
+                    Border width: <input id="border-width" class="border-width" type="range" min="0" max="50" value="0" step="1">
+                    <input type="text" id="border-width-num" class="border-width-num" value="0"> px
+                </div>
+                <div class="settings__buton--border-style">
+                    Border style:
+                    <select id="border-style-select" class="border-style-select">
+                        <option value="solid">solid</option>
+                        <option value="none">none</option>
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                        <option value="double">double</option>
+
+                    </select>
+                </div>
+            </div>
+            <p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+        </div>
+        <div id="button__output" class="button__output">
+            <div class="button__output--html">
+
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

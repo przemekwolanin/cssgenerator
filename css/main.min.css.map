@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "main.min.css",
+	"sources": [
+		"main.scss",
+		"../scss/_elements.scss"
+	],
+	"names": [],
+	"mappings": "ACEA,AAAA,gBAAgB,AAAC,CACb,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,OAAO,CAAE,GAAG,CACZ,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,KAAK,CAAE,CAAC,CACX"
+}
